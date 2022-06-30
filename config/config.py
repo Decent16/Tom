@@ -11,11 +11,11 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", "9683694"))
-API_HASH = getenv("API_HASH", "c426d9f7087744afdafc961a620b6338")
+API_ID = int(getenv("API_ID", "10193667"))
+API_HASH = getenv("API_HASH", "c3d6f5eab4effe625322c2344f0d14ad")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "5583584098:AAHkB6C2oca5NAWTnAIQShJVs7bFmP8kHWE")
+BOT_TOKEN = getenv("BOT_TOKEN", "5479357601:AAFPUJIiJ-i0MJgrKXfITCXRqLUu5_Fp2Nw")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://noobyash:noobyash@cluster0.0mptw.mongodb.net/?retryWrites=true&w=majority")
@@ -31,14 +31,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001701613521"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001710117476"))
 
 # A name for your Music bot.
 MUSIC_BOT_NAME = getenv("Tom")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "5286943475").split())
+    map(int, getenv("OWNER_ID", "5132670228").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -129,7 +129,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", "AQDD0-3YzrOM5oVzlk6vOD-HBh3m4rPRP-Z-8EESeIAscj08pC2FGLg8FdYnR8InhT0wV-M4JOUyjXSicfTeN5ymeY6WwbXDE3ejepPKgutXYFBtywG35ft6jBLoTfh0rUBkYJvShoOKKiHWJSdO0LcWyLGgXCjGU1gEKKiBCchkhUmBhkQPSRq4ipNJ3R_exYtRTdibCW-2F3gpKLx1cJmKoTDg8WbKoYzAG0cesJJmuGhXfkQ0U60cbSIIBayLvhq_FD_VLDulvFG7qHZFglgaz1LXrvfBAJzgpMBJrDAVd_nUrTEH3RNoTeDTUkKG2SkC_3sH4kTqogp1qxp7TL9oAAAAAUR_1oAA")
+STRING1 = getenv("STRING_SESSION", "BQB2M5ufXpmBW7iJ6oysiyRYhEywVk4APZUAeLdBf_vGJYqSmxCakWyxod8f4k2ZOMshf7Wf-uHpANVBvPecZ-i7rZ-rHYa--YPtCox5-fpMbx6tItGj9GcfQxZExyoyuxTI1s1YXXYZZJvSO4hP0WNwo3vqtCmBmB2fNVs5c9XBA6jEjyjd7KEFnioca9P8KzyoeVmCcGAAXSZ7butA-mvEyZsGGWynbrsG_u5O2iy69nDPCxu4WOwyIR-p48SSycOu28qsUG4OsaSaL-ix7xXkt0cl9C6a0z6qBHn7C2Za8jd0xNUIsdjLVkbR6bEwlqFrHEOxKBg5fN2lp8Vn0GW4AAAAAUt7vhwA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -336,5 +336,4 @@ if TELEGRAM_VIDEO_URL:
                 "[ERROR] - Your TELEGRAM_VIDEO_URL url is wrong. Please ensure that it starts with https://"
             )
             sys.exit()
-
 
